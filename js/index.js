@@ -68,10 +68,13 @@ const displayAllPaddyCategories = (pets) => {
     const petsContainer = document.getElementById('all-paddy-data');
     petsContainer.innerHTML="";
 
-    if(pets.length=0){
+    if(pets.length==0){
         petsContainer.innerHTML= `
-        <div></div>
-        `
+        <div class="flex justify-center items-center">
+        <img src='/images/error.webp'>
+        </div>
+        `;
+        return
     }
 
     pets.forEach(pet => {
