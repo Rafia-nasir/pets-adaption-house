@@ -46,12 +46,7 @@ const loadSinglePaddyCategories = (id) => {
   const loadLikeButton = async (petId) => {
     console.log(petId)
 
-    // // const url = `https://openapi.programming-hero.com/api/peddy/pet/${petId}`
-    // // const res = await fetch(url);
-    // // const data = await res.json();
-    // displayLikeButton(data.petData)
-
-    // console.log(data)
+   
 
     const likeContainer=document.getElementById('sideBarPic')
     const singleImage=document.createElement('img')
@@ -121,25 +116,13 @@ const loadDeatailsButton = async (petId) => {
 `
     document.getElementById('showModalData').click();
 }
-// creat displayPaddyCategories
 
-
-const loadAllPets=()=>{
-    console.log('wow 3 second gone')
-}
-
-  const handleSearch=()=>{
-           console.log('hello')
-
-           setTimeout(function(){
-             loadAllPets
-           },2000)
-  }
 
 
 const displayPaddyCategories = (categories) => {
 
     const categoryContainer = document.getElementById("categories")
+  
 
     categories.forEach((item) => {
 
@@ -186,7 +169,7 @@ const displayAllPaddyCategories = (pets) => {
 
         petsContainer.innerHTML = `
         <div class="text-center flex-col gap-4   flex justify-center items-center  ">
-        <img src='/images/error.webp'>
+        <img src='./images/error.webp'>
         <h1 class='font-bold'>No information Available</h1>
         <p class='text-black'>Pet adoption is the process of transferring responsibility for a pet that was previously owned by another party.</br> Common sources for adoptable pets are animal shelters, rescue groups, or other pet owners. </p>
         </div>
