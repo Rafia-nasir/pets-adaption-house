@@ -169,7 +169,7 @@ const displayAllPaddyCategories = (pets) => {
 
         petsContainer.innerHTML = `
         <div class="text-center flex-col gap-4   flex justify-center items-center  ">
-        <img src='./images/error.webp'>
+        <img src='../images/error.webp'>
         <h1 class='font-bold'>No information Available</h1>
         <p class='text-black'>Pet adoption is the process of transferring responsibility for a pet that was previously owned by another party.</br> Common sources for adoptable pets are animal shelters, rescue groups, or other pet owners. </p>
         </div>
